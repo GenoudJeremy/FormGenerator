@@ -35,11 +35,10 @@ let formComponent = [
   {
     type: "text",
     label: 'input 1',
-    default: 'Valeur 1',
+    default: null,
     control: 'INPUT_1',
     validators: {
       required: true,
-      email: true
     }
   },
   {
@@ -54,17 +53,30 @@ let formComponent = [
   {
     type: 'text',
     label: 'input 3',
-    default: 'Valeur 3',
-    control: 'INPUT_3',
-    validators: {
-      required: true
-    }
+    default: null,
+    control: 'INPUT_3'
   },
   {
     type: 'select',
     label: 'select',
     default: null,
     control: 'SELECT_1',
+    validators: {
+      required: true,
+    },
+    possibleValues : [
+      {label: 'option 1', value: 1},
+      {label: 'option 2', value: 2},
+      {label: 'option 3', value: 3},
+      {label: 'option 4', value: 4},
+      {label: 'option 5', value: 5},
+    ]
+  },
+  {
+    type: 'radio',
+    label: 'Radio',
+    default: null,
+    control: 'RADIO_1',
     validators: {
       required: true,
     },
