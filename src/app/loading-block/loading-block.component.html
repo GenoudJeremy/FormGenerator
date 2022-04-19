@@ -1,0 +1,3 @@
+<mat-spinner mode="indeterminate" class="{{dataLoading.speed}}">
+</mat-spinner>
+<app-loading-block *ngIf="dataLoading.child" [dataLoading]="dataLoading.child"></app-loading-block>

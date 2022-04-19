@@ -1,0 +1,14 @@
+app-loading-block {
+    display: block;
+    position: absolute;
+    top: 0;
+    width : 300px;
+    height: 300px
+}
+::ng-deep .ms1 circle {
+    animation-duration: 3000ms !important;
+}
+
+.container0 {
+    background-color: grey
+}

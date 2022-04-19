@@ -1,0 +1,6 @@
+<div class="form-group" [formGroup]="formParent">
+    <label for="{{field.control}}">{{field.label}}</label>
+    <select [ngClass]="{'form-control': true, 'border-danger': formParent.controls[field.control].invalid && formParent.controls[field.control].touched}" formControlName="{{field.control}}" id="{{field.control}}">
+        <option value="{{option.value}}" *ngFor="let option of field.possibleValues">{{option.label}}</option>
+    </select>
+</div>

@@ -1,0 +1,4 @@
+<div class="form-group" [formGroup]="formParent">
+    <label for="{{field.control}}">{{field.label}}</label>
+    <input type="text" [ngClass]="{'form-control': true, 'border-danger': formParent.controls[field.control].invalid && formParent.controls[field.control].touched}" formControlName="{{field.control}}" id="{{field.control}}">
+</div>

@@ -1,0 +1,45 @@
+::ng-deep .ms8 circle {
+    animation-duration: 10000ms !important;
+    stroke: grey !important;
+}
+::ng-deep .ms7 circle {
+    animation-duration: 9000ms!important;
+    stroke: #007F4B !important;
+}
+::ng-deep .ms6 circle {
+    animation-duration: 8000ms !important;
+    stroke: grey !important;
+}
+::ng-deep .ms5 circle {
+    animation-duration: 7000ms !important;
+    stroke: #007F4B !important;
+}
+::ng-deep .ms4 circle {
+    animation-duration: 6000ms !important;
+    stroke: grey !important;
+}
+::ng-deep .ms3 circle {
+    animation-duration: 5000ms !important;
+    stroke: #007F4B !important;
+}
+::ng-deep .ms2 circle {
+    animation-duration: 4000ms !important;
+    stroke: grey !important;
+}
+::ng-deep .ms1 circle {
+    animation-duration: 3000ms !important;
+    stroke: #007F4B !important;
+}
+::ng-deep mat-spinner, ::ng-deep svg {
+    height: 100% !important;
+    width: 100% !important
+}
+
+app-loading-block {
+    display: block;
+    position: absolute;
+    width: 80% !important;
+    height: 80% !important;
+    top: 10%;
+    left: 10%;
+}

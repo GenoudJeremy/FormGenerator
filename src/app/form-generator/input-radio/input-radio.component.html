@@ -1,0 +1,4 @@
+<div class="form-check" *ngFor="let option of field.possibleValues" [formGroup]="formParent">
+    <input type="radio" value="{{option.value}}" id="i{{option.value}}" formControlName="{{field.control}}" [ngClass]="{'form-check-input': true, 'border-danger': formParent.controls[field.control].invalid && formParent.controls[field.control].touched}">
+    <label for="i{{option.value}}">{{option.label}}</label>
+</div>

@@ -1,0 +1,9 @@
+<form [formGroup]="formParent">
+    <div *ngFor="let field of formComponent" class="my-3">
+        <app-input-text  *ngIf="field.type == 'text'" [field]="field" [formParent]="formParent"></app-input-text>
+        <app-select *ngIf="field.type == 'select'" [field]="field" [formParent]="formParent"></app-select>
+    </div>
+    <div class="w-100 text-center">
+        <button class="btn btn-secondary btnHover" [disabled]="formParent.invalid">Enregistrer</button>
+    </div>
+</form>
